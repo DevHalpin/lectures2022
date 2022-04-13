@@ -1,60 +1,68 @@
 # W02D03 - Networking with TCP and HTTP
 
+[Video] (https://vimeo.com/699202584/b12d356a6f)
+[Code] ()
+
 ### To Do
-- [ ] Discuss networking and the need for protocols
-- [ ] TCP introduction
-- [ ] HTTP fundamentals
-- [ ] TCP demo
+- [x] Discuss networking and the need for protocols
+- [x] TCP introduction
+- [x] TCP demo
+- [x] HTTP fundamentals
 
-### Client and Servers
-- The majority of networking is made up of server/client connections
-- In general, servers have information and clients want information
+### What is networking?
+- Communication between machines on a network
 
-### Internet Protocol
+### What is a protocol?
+- A defined standard for how requests and responses are sent between network devices
 
-- Uniquely identifies the machine on a network (think "street address")
-- Come in two flavours: IPv4 and IPv6
-    - 192.168.1.12
-    - 2001:db8:3333:4444:5555:6666:7777:8888
-- The port identifies the application (think "apartment number")
-- We have 65,535 ports to choose from (per internet connection)
-- Popular ports:
-    - HTTP: 80
-    - HTTP: 443
-    - FTP: 21
-    - SMTP: 25
-    - SSH: 22
-    - Postgres: 5432
+### The OSI Model
+- **O**pen **S**ystems **I**nterconnection Model developed by the International Organization for Standardization (ISO)
+- Conceptual model of how data is transmitted over a network
+
+1. **Physical** - physical pieces of hardware
+2. **Datalink** - how the physical device is connect to the network
+3. **Network** - communication between devices over the network
+4. **Transport** - splits up the network communication into ports (~65000 of them)
+5. **Session** - establishes a session between two connected devices
+6. **Presentation** - data translation layer (encryption and decryption)
+7. **Application** - the application (client or server)
+
+### TCP/IP Model
+1. **Network Access** - physical devices and how they connect to the network
+2. **Internetwork** - communication between devices on the network
+3. **Transport** - splits up the network communication into ports
+4. **Application** - clients and servers/applications and services/sessions and encryption
 
 ### Transport Layer Protocols
-    - Break data into packets to be sent over the network layer
-    - Give each packet a header with origin and destination
-    - UDP: User Datagram Protocol
-        - Smaller header size (8 bytes) which results in smaller packet sizes
-        - Connectionless ie. there is no need to establish or maintain a connection
-        - No error recovery (any corrupted packets are discarded)
-        - Packets can arrive in any order
-        - Useful for streaming and other low latency applications
-    - TCP: Transportation Control Protocol
-        - Larger header size (20 bytes)
-        - Requires a connection (3-way handshake)
-        - Corrupted packets are reported to the server and are re-sent
-        - Packets arrive in order
-        - Useful when guaranteed communication is needed
+- Break data into packets to be sent over the network layer
+- Give each packet a header with origin and destination
+- **UDP**: **U**ser **D**atagram **P**rotocol
+  - Smaller header size (8 bytes) which results in smaller packet sizes
+  - _Connectionless_ ie. there is no need to establish or maintain a connection
+  - No error recovery (any corrupted packets are discarded)
+  - Packets can arrive in any order
+  - Useful for streaming/low latency applications
+- **TCP**: **T**ransportation **C**ontrol **P**rotocol
+  - Larger header size (20 bytes)
+  - Requires a connection (3-way handshake)
+  - Corrupted packets are reported to the server and are re-sent
+  - Packets arrive in order
+  - Useful when guaranteed communication is needed
 
 ### HTTP
-    - HyperText Transfer Protocol
-    - Built on top of the TCP layer
-    - Protocol for how message are formatted and transmitted
-    - Call/Request and response communication
-    - State-less: no memory of any previous communication
-    - Routes to resources are made up of method (verb) and path
-    - METHODS: GET, POST, PUT, PATCH, DELETE
-    - Get - Gets information 
-    - Post - Posts information 
-    - Paths: '/users', '/dinosaurs/7'
-    - Returns status codes for each communication (eg. 200, 202, 302, 404, 500)
-    - Response headers contain information about the respons such as media type and content size
-    - Response body contains the content (JSON, html, etc)
+- **H**yper**T**ext **T**ransfer **P**rotocol
+- Protocol for how messages are formatted and transmitted
+- Call and response communication
+- _State-less_: no memory of any previous communication
+- Routes to resources are made up of methods (verbs) and paths
+- **METHODS**: GET, POST, PUT, PATCH, DELETE
+- **PATHS**: `/users`, `/unicorns/123`
+- Returns status codes for each communication (eg. 200, 202, 302, 404, 500)
+- Response headers contain information about the response such as media type and content size
+- Reponse body contains the content (JSON, html, etc)
 
-
+### Useful Links
+* [OSI Model](https://en.wikipedia.org/wiki/OSI_model)
+* [Net package documentation](https://nodejs.org/api/net.html)
+* [HTTP](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)
+* [Request Package](https://www.npmjs.com/package/request)
