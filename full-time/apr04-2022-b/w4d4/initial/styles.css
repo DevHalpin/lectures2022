@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+  }
+
+  html {
+      font-size: 5px;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+  }
+  
+  header {
+    height: 160px;
+    background-color: coral;
+  }
+  
+  section {
+    border: 2px solid black;
+    font-size: 125px;
+  }
+  
+  section div {
+    height: 50rem;
+    width: 20vw;
+    /* min-width: 100px;
+    max-width: 150px; */
+    margin: 20px;
+    line-height: 150px;
+    display: inline-block;
+    background-color: lightpink;
+    text-align: center;
+  }
+  
+  footer {
+    background-color: burlywood;
+    height: 150px;
+  }
+
+  @media only screen and (max-width: 500px) {
+      body {
+        background-color: blueviolet;
+      }
+  }
+
+  @media only screen and (orientation: landscape) {
+      body {
+          background-color: #BADA55
+      }
+  }
+  

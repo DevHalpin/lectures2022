@@ -1,0 +1,83 @@
+
+@import 'variables';
+
+@mixin header-styles {
+    height: 50px;
+    background-color: black;
+}
+
+@mixin make-square($n) {
+    height: $n;
+    width: $n;
+    font-size: ($n/2);
+    border: ($n/4) solid black;
+}
+
+.small-square {
+    @include make-square(4px);
+}
+
+.big-square {
+    @include make-square(400em);
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+  html {
+      font-size: 5px;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+  }
+  
+  header {
+    @include header-styles()
+  }
+
+  .heading {
+      @extend header;
+      color: green;
+  }
+  
+  section {
+    border: 2px solid black;
+    font-size: 125px;
+    div {
+        height: 50rem;
+        width: 20vw;
+        /* min-width: 100px;
+        max-width: 150px; */
+        margin: 20px;
+        line-height: 150px;
+        display: inline-block;
+        background-color: lightpink;
+        text-align: center;
+        p {
+
+        }
+      }
+  }
+  
+  
+  
+  footer {
+    background-color: burlywood;
+    height: 150px;
+  }
+
+  @media only screen and (max-width: 500px) {
+      body {
+        background-color: blueviolet;
+      }
+  }
+
+  @media only screen and (orientation: landscape) {
+      body {
+          background-color: #BADA55
+      }
+  }
