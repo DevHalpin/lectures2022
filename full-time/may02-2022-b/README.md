@@ -14,7 +14,7 @@
 - A defined standard for how requests and responses are sent between network devices
 
 ### The OSI Model
-- Open Systems Interconnection Model developed by the Internation Organization for Standardization ()ISO)
+- Open Systems Interconnection Model developed by the Internation Organization for Standardization (ISO)
 - Conceptual model of data is transmitted over a network
 
 1. **Physical** - physical pieces of hardware
