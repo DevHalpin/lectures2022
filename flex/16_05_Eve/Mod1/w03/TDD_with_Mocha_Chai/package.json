@@ -1,0 +1,20 @@
+{
+  "name": "tdd_with_mocha_chai",
+  "version": "0.1.0",
+  "description": "Fun Testing Lecture Code",
+  "main": "my_function.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "testing",
+    "npm",
+    "fun"
+  ],
+  "author": "David Halpin",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0"
+  }
+}
