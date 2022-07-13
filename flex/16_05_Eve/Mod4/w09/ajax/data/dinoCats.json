@@ -1,0 +1,17 @@
+[
+  {
+    "clawLength": "10 inches",
+    "speed": "100 km/h",
+    "diet": "Humans",
+    "numOfHeads": "2",
+    "jumpHeight": "2 m"
+  },
+
+  {
+    "clawLength": "20 inches",
+    "speed": "60 km/h",
+    "diet": "Smaller Cats",
+    "numOfHeads": "4",
+    "jumpHeight": "10 m"
+  }
+]
