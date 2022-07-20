@@ -1,0 +1,52 @@
+@import '_variables';
+
+@mixin make-square($n){
+  height: $n;
+  width: $n;
+  font-size: ($n/2);
+  border: ($n/4) solid black
+}
+
+*{
+    box-sizing: border-box;
+  }
+
+  
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-size: $font-size;
+    @include make-square(4em)
+  }
+  
+  header {
+   height: 160px;
+   color: $primary;
+  }
+  
+  section {
+    border: 2px solid $secondary;
+    width: 9rem;
+    
+    /* height: 300px;
+    width: 500px; */
+  }
+
+  div {
+    @extend section;
+    @extend header;
+    /* height: 150px; */
+    /* width: 150px; */
+     /* width: 50%; */
+    /* height: 50%; */
+    
+    height: 9rem;
+    /* min-width: 150px;
+    max-width: 500px; */
+    margin: 20px;
+    line-height: 150px;
+    display: inline-block;
+    background-color: $primary;
+    text-align: center;
+  }
