@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- React Library Core: -->
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <!-- React Library DOM: -->
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <!-- Babel (for JSX Compatibility): -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <title>React App</title>
+  </head>
+  <body>
+    <!-- Container for our React application: -->
+    <div id="your-container"></div>
+    <!-- Don't forget to add: type="text/babel" -->
+    <script type="text/babel">
+      const domContainerElement = document.getElementById("your-container");
+      const reactRoot = ReactDOM.createRoot(domContainerElement);
+
+      function HelloComponent() {
+        // Here we can see JSX at work! Much cleaner...
+        return (
+          <>
+            <p
+              onClick={() => {
+                console.log("Clicked!");
+              }}
+            >
+              Hello, World!
+            </p>
+            <p> This is a p tag </p>
+            <br/>
+            
+          </>
+        );
+      }
+
+      reactRoot.render(HelloComponent());
+    </script>
+    <!-- <script>
+      // Choose an element in your web page.
+      const domContainerElement = document.getElementById("your-container");
+
+      // Let React know you want your application to appear in this element.
+      const reactRoot = ReactDOM.createRoot(domContainerElement);
+
+      // Build a component for your application.
+      class HelloComponent extends React.Component {
+        render() {
+          // Notice we pass the HTML element, and the text inside.
+          return React.createElement("p", {}, "Hello, World!");
+        }
+      }
+
+      // Get React to render your application in that root!
+      reactRoot.render(React.createElement(HelloComponent, null, null));
+    </script> -->
+  </body>
+</html>
