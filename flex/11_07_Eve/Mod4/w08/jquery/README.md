@@ -1,4 +1,5 @@
-# W04D02 - Client Side JavaScript & jQuery
+# Mod04W08 - Client Side JavaScript & jQuery
+
 
 ### To Do
 - [x] JavaScript in the Browser
@@ -37,7 +38,7 @@
 </html>
 ```
 
-![DOM example](/dom-example.png)
+![DOM example](https://raw.githubusercontent.com/DevHalpin/lectures2022/main/flex/11_07_Eve/Mod4/w08/jquery/dom-example.png)
 *Green outline === HTML element; Pink outline === text node*
 
 ### Useful Browser Objects
