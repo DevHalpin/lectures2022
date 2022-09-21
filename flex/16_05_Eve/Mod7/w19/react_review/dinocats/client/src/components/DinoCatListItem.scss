@@ -1,0 +1,10 @@
+$primary: olive;
+$secondary: greenyellow;
+
+.dinoCat {
+  color: $primary;
+  border: 2px dotted $secondary;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 10px;
+}
