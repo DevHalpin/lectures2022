@@ -2,19 +2,19 @@
 
 ## To Do
 
-- [ ] Felipa the Frog
-- [ ] The role of HTML and CSS in Web Development
-- [ ] Semantic Tags
-- [ ] Attributes
-- [ ] Intro to CSS
-- [ ] Inline styles
-- [ ] Style element
-- [ ] Selectors
-- [ ] DevTools
-- [ ] Box Model and Box Sizing
-- [ ] External Stylesheets
-- [ ] CSS Resets/Normalize
-- [ ] Specificity
+- [x] Felipa the Frog
+- [x] The role of HTML and CSS in Web Development
+- [x] Semantic Tags
+- [x] Attributes
+- [x] Intro to CSS
+- [x] Inline styles
+- [x] Style element
+- [x] Selectors
+- [x] DevTools
+- [x] Box Model and Box Sizing
+- [x] External Stylesheets
+- [x] CSS Resets/Normalize
+- [x] Specificity
 
 
 You'll notice that while this week has more new concepts (every week will), our approach to teaching with you will adjust a bit. Overall, as the weeks progress, there is less emphasis on giving you all the resources, functions, and tips that you need to complete an activity. There will be more expectation for you to poke around until you find an answer.
