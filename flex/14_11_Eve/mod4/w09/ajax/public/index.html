@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="./scripts/app.js"></script>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Dinocats</title>
+</head>
+<body>
+    <h1>Welcome to the Dino Cat Wiki</h1>
+    <div>
+        <button class="data-button" type="submit">Click Me to Load Data</button>
+        </br>
+        <form class="dinocat-form">
+            <h2> Create new Dino Cat!</h2>
+
+            <label for="clawLength">Claw Length</label>
+            <input name="clawLength" />
+            </br>
+            <label for="speed">Speed</label>
+            <input name="speed" />
+            </br>
+            <label for="diet">Diet</label>
+            <input name="diet" />
+            </br>
+            <label for="numOfHeads">Number of Heads</label>
+            <input name="numOfHeads" />
+            </br>
+            <label for="jumpHeight">Jump Height</label>
+            <input name="jumpHeight" />
+
+            <button id="submit" type="submit">Submit!</button>
+        </form>
+
+    </div>
+    <section id="dinocat-container"></section>
+</body>
+</html>
