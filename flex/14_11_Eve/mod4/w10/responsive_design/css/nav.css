@@ -1,0 +1,18 @@
+nav {
+  width: 95vw;
+  background: tomato;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed; }
+  nav ul {
+    list-style: none;
+    width: 50vw;
+    display: flex;
+    justify-content: space-around; }
+  nav div {
+    display: none;
+    font-size: 2em; }
+
+/*# sourceMappingURL=nav.css.map */
