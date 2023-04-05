@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "Chocolate Chip",
+    "calories": 100
+  },
+  {
+    "id": 2,
+    "name": "Peanut Butter",
+    "calories": 150
+  },
+  {
+    "id": 3,
+    "name": "White Chocolate",
+    "calories": 200
+  }
+]
