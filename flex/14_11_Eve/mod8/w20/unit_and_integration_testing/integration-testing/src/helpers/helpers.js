@@ -25,3 +25,19 @@ export const announceResult = (playerSelection, compSelection) => {
     };
     return lookup[status];
   };
+
+  export const chooseRobotItem = (cheating, playerSelection) => {
+    const lookup = {
+      'Tree': 'Axe',
+      'Moai': 'Tree',
+      'Axe': 'Moai',
+    };
+    if (cheating) {
+      return lookup[playerSelection]
+    } else {
+      const choices = ["Moai", "Axe", "Tree"];
+      const randomIndex = Math.floor(Math.random() * choices.length);
+      return choices[randomIndex]
+    }
+
+  }

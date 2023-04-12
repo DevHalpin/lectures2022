@@ -1,9 +1,11 @@
+import React from 'react';
 import axios from 'axios';
-import { useState } from 'react';
 import {genFeedbackMessage} from '../helpers/helpers';
 
+axios.defaults.baseURL = 'https://my-json-server.typicode.com/andydlindsay/moai-axe-tree';
+
 const Result = (props) => {
-  const [highScores, setHighScores] = useState([]);
+  const [highScores, setHighScores] = React.useState([]);
 
   const fetchHighScores = () => {
     axios
