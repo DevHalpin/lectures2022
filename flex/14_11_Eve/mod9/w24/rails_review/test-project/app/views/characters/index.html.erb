@@ -1,0 +1,19 @@
+<h1>Character Index</h1>
+
+<ul>
+  <% @characters.each do |character| %>
+    <li>
+      <h2>
+        <%= character.name %>
+      </h2>
+      <dl>
+        <dt>Actor</dt>
+        <dd><%= character.actor %> </dd>
+        <dt>Email</dt>
+        <dd><%= character.email %> </dd>
+        <dt>Quotes</dt>
+        <dd><%= link_to "View Quotes", character_quotes_path(character) %> </dd>
+      </dl>
+    </li>
+    <% end %>
+</ul>

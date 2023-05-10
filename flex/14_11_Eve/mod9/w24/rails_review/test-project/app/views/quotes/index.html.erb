@@ -1,0 +1,14 @@
+<h1><%= @character.name %>'s Quotes Index</h1>
+<nav>
+  <%= link_to "Characters", characters_path %>
+</nav>
+
+<ul>
+  <% @quotes.each do |quote| %>
+    <li>
+      <blockquote>
+        <%= quote.quote %>
+      </blockquote>
+    </li>
+  <% end %>
+</ul>
